@@ -9,6 +9,11 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-p directors_database
+ counter=0
+ movies=directors_database[0][1]
+ while counter < movies do
+ puts "-" + directors_database[0][1][counter][0]
+ counter+=1
 end
-
+end
+ 
